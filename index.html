@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sankarshana Srinivasan | Cosmology & Gravity</title>
+  <meta name="description" content="Personal academic website of Sankarshana Srinivasan — postdoctoral researcher in cosmology, large-scale structure, modified gravity, and cosmological inference." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121933;
+      --soft: #1a2345;
+      --text: #e8ecff;
+      --muted: #b8c0e0;
+      --accent: #7aa2ff;
+      --accent-2: #9be7ff;
+      --max: 1100px;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #09101d 0%, #0d1530 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent-2);
+      text-decoration: none;
+    }
+
+    a:hover {
+      opacity: 0.9;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(11,16,32,0.75);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 6rem 0 4rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(122,162,255,0.12);
+      color: var(--accent-2);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(122,162,255,0.18);
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 4.4rem);
+      line-height: 1.05;
+      margin: 0 0 1rem;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      margin-bottom: 1rem;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 760px;
+    }
+
+    .card {
+      background: rgba(18,25,51,0.88);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .stats {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .section {
+      padding: 4.5rem 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
+    ul.clean {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.clean li {
+      padding: 0.45rem 0;
+      color: var(--muted);
+    }
+
+    .highlight {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    footer {
+      padding: 3rem 0 4rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: var(--muted);
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      padding: 0.9rem 1.2rem;
+      border-radius: 12px;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: var(--soft);
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #08111f;
+      border: none;
+    }
+
+    @media (max-width: 860px) {
+      .hero-grid,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Sankarshana Srinivasan</div>
+        <div class="nav-links">
+          <a href="#research">Research</a>
+          <a href="#program">Research Program</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="tag">Cosmology • Gravity • Large-Scale Structure</div>
+          <h1>Sankarshana Srinivasan</h1>
+          <p class="lead">
+            Postdoctoral researcher in cosmology working on large-scale structure,
+            modified gravity, and cosmological inference, with a focus on nonlinear
+            forward-modelling and simulation-based inference for next-generation surveys.
+          </p>
+          <div class="buttons">
+            <a class="btn primary" href="#research">Research Overview</a>
+            <a class="btn" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="card">
+            <p><span class="highlight">Current:</span><br>
+            Postdoctoral Researcher, LMU Munich<br>
+            Alexander von Humboldt Fellow</p>
+          </div>
+          <div class="card">
+            <p><span class="highlight">From 2026:</span><br>
+            Physics for the Future Fellow, Prague<br>
+            Marie Skłodowska-Curie Programme<br>
+            Secondment at University of Oxford</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="container">
+        <h2>Research Focus</h2>
+        <p class="lead">
+          My work focuses on testing gravity on cosmological scales using large-scale
+          structure observables, combining theory, simulations, and data analysis to
+          build robust inference pipelines capable of probing deviations from General
+          Relativity across cosmic time and scale.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Core Areas</h3>
+            <ul class="clean">
+              <li>Nonlinear structure formation</li>
+              <li>Modified gravity phenomenology</li>
+              <li>Cosmological inference pipelines</li>
+              <li>Simulation-based inference (SBI)</li>
+              <li>Emulator development for simulations</li>
+              <li>Multi-probe large-scale structure analyses</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Survey Applications</h3>
+            <ul class="clean">
+              <li>Euclid Space Telescope</li>
+              <li>Rubin Observatory LSST</li>
+              <li>Cosmic shear</li>
+              <li>Galaxy clustering</li>
+              <li>CMB lensing</li>
+              <li>Spectroscopic probes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="program">
+      <div class="container">
+        <h2>Long-Term Research Program</h2>
+        <div class="card">
+          <p>
+            My long-term goal is to build fully nonlinear cosmological inference
+            frameworks that enable model-agnostic tests of gravity using upcoming
+            precision surveys. This includes combining nonlinear modified gravity
+            modelling, Gaussian process emulation of simulations, Bayesian inference,
+            and machine learning–driven simulation-based inference.
+          </p>
+          <p>
+            A central component of this effort is the <strong>Cosmological Gravity on
+            All Scales</strong> series, where I developed a model-agnostic
+            parameterization of gravity using redshift-binned effective gravitational
+            strength and gravitational slip, alongside nonlinear emulators and full
+            MCMC pipelines for large-scale structure and CMB lensing analyses.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Collaborations & Additional Work</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Survey Collaborations</h3>
+            <p>
+              Active involvement in the Euclid Collaboration and LSST forecasting
+              efforts, including parameterized gravity analyses, forecasting, and
+              survey pipeline validation.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Axion Dark Matter</h3>
+            <p>
+              Additional work on axion dark matter phenomenology, especially radio and
+              pulsar signatures of axion conversion around neutron stars.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="card">
+          <p>
+            My broader goal is to establish an independent research program in
+            nonlinear cosmological inference and tests of gravity, bridging precision
+            cosmology and fundamental physics.
+          </p>
+          <p>
+            Email: Sankarshana.Sri@physik.uni-muenchen.de
+            ORCID: https://orcid.org/0000-0003-1539-3276
+            NASA ADS Publications: https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0003-1539-3276&sort=date%20desc%2C%20bibcode%20desc&p_=0
+            github: www.github.com/sankarshana16
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Sankarshana Srinivasan — Cosmology, Gravity, and Large-Scale Structure
+    </div>
+  </footer>
+</body>
+</html>
+
